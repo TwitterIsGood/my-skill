@@ -1,0 +1,9 @@
+interface:
+  display_name: "公众号 CLI"
+  short_description: "搜索、读取、提取并分析微信公众号文章的一体化工具"
+  icon_small: "./assets/icon.png"
+  icon_large: "./assets/wechat-icon.png"
+  brand_color: "#07C160"
+  default_prompt: "Use $gongzhonghao-cli to search, read, extract, summarize, or analyze WeChat Official Account articles."
+policy:
+  allow_implicit_invocation: true

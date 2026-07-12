@@ -1,0 +1,4 @@
+interface:
+  display_name: "LINUX DO Article Reader"
+  short_description: "快速读取 LINUX DO Discourse 文章"
+  default_prompt: "Use $linuxdo-article-reader to fetch and summarize a LINUX DO topic URL."
