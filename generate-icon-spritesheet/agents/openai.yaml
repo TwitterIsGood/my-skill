@@ -2,4 +2,3 @@ interface:
   display_name: "Generate Icon Spritesheet"
   short_description: "Generate cohesive icons, atlases, and iOS frame data."
   default_prompt: "Use $generate-icon-spritesheet to generate a cohesive transparent icon set and package it with JSON and Swift metadata."
-
