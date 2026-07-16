@@ -1,0 +1,4 @@
+interface:
+  display_name: "Build UI Sprite Atlas"
+  short_description: "Turn UI icons into a mapped spritesheet atlas"
+  default_prompt: "Extract or generate all UI icons and package them as a validated spritesheet with JSON and CSS coordinates."
