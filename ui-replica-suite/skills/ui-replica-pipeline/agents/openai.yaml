@@ -1,0 +1,4 @@
+interface:
+  display_name: "UI Replica Pipeline"
+  short_description: "Run visual, sprite, reproduction, and QA stages"
+  default_prompt: "Run the complete UI replica pipeline and iterate until it meets the configured visual thresholds."

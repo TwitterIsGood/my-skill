@@ -1,0 +1,9 @@
+.env
+.env.local
+.ui-replica.env
+__pycache__/
+*.pyc
+.DS_Store
+runs/
+dist/
+build/
