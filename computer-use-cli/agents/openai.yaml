@@ -1,0 +1,4 @@
+interface:
+  display_name: "Computer Use for Codex CLI"
+  short_description: "Control local macOS apps from Codex CLI"
+  default_prompt: "Use Computer Use to inspect and operate the requested macOS app."
