@@ -1,0 +1,45 @@
+schema_version: 1
+updated_at: 2026-08-02
+
+sources:
+  - id: devicelab-dev/maestro-runner
+    url: https://github.com/devicelab-dev/maestro-runner
+    ref: v1.1.22
+    commit: 807ae0ffadfc8e39cc35df47f1d2570de56cc5de
+    license: Apache-2.0
+    import_mode: wrapper
+    entries:
+      - name: maestro-runner
+        path: maestro-runner
+        notes: Project-local wrapper that downloads and verifies the pinned CLI release.
+
+  - id: cloudflare/skills
+    url: https://github.com/cloudflare/skills
+    ref: main
+    commit: 30553f89ae1ef1e3c2917cd09d72dac992bb4e9a
+    license: Apache-2.0
+    import_mode: individual-skills
+    entries:
+      - { name: agents-sdk, path: agents-sdk, source_path: skills/agents-sdk }
+      - { name: cloudflare, path: cloudflare, source_path: skills/cloudflare }
+      - { name: cloudflare-email-service, path: cloudflare-email-service, source_path: skills/cloudflare-email-service }
+      - { name: cloudflare-one, path: cloudflare-one, source_path: skills/cloudflare-one }
+      - { name: cloudflare-one-migrations, path: cloudflare-one-migrations, source_path: skills/cloudflare-one-migrations }
+      - { name: durable-objects, path: durable-objects, source_path: skills/durable-objects }
+      - { name: sandbox-sdk, path: sandbox-sdk, source_path: skills/sandbox-sdk }
+      - { name: turnstile-spin, path: turnstile-spin, source_path: skills/turnstile-spin }
+      - { name: web-perf, path: web-perf, source_path: skills/web-perf }
+      - { name: workers-best-practices, path: workers-best-practices, source_path: skills/workers-best-practices }
+      - { name: wrangler, path: wrangler, source_path: skills/wrangler }
+
+  - id: zhaoxuya520/reverse-skill
+    url: https://github.com/zhaoxuya520/reverse-skill
+    ref: main
+    commit: ba445f84d6d16b54bfddfd4cbc1a63986f2159fc
+    license: MIT
+    import_mode: integrated-suite
+    entries:
+      - name: reverse-skill
+        path: reverse-skill
+        source_path: .
+        notes: Complete upstream snapshot is stored under reverse-skill/upstream.

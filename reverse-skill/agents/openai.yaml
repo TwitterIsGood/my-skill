@@ -1,0 +1,4 @@
+interface:
+  display_name: "Reverse Skill"
+  short_description: "Route authorized reverse engineering workflows"
+  default_prompt: "Use $reverse-skill to route this authorized security analysis task."
