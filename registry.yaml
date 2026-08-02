@@ -1,0 +1,81 @@
+schema_version: 1
+updated_at: 2026-08-02
+
+sources:
+  - id: devicelab-dev/maestro-runner
+    url: https://github.com/devicelab-dev/maestro-runner
+    ref: v1.1.22
+    commit: 807ae0ffadfc8e39cc35df47f1d2570de56cc5de
+    license: Apache-2.0
+    import_mode: wrapper
+    entries:
+      - name: maestro-runner
+        path: maestro-runner
+        notes: Project-local wrapper that downloads and verifies the pinned CLI release.
+
+  - id: cloudflare/skills
+    url: https://github.com/cloudflare/skills
+    ref: main
+    commit: 30553f89ae1ef1e3c2917cd09d72dac992bb4e9a
+    license: Apache-2.0
+    import_mode: individual-skills
+    entries:
+      - { name: agents-sdk, path: agents-sdk, source_path: skills/agents-sdk }
+      - { name: cloudflare, path: cloudflare, source_path: skills/cloudflare }
+      - { name: cloudflare-email-service, path: cloudflare-email-service, source_path: skills/cloudflare-email-service }
+      - { name: cloudflare-one, path: cloudflare-one, source_path: skills/cloudflare-one }
+      - { name: cloudflare-one-migrations, path: cloudflare-one-migrations, source_path: skills/cloudflare-one-migrations }
+      - { name: durable-objects, path: durable-objects, source_path: skills/durable-objects }
+      - { name: sandbox-sdk, path: sandbox-sdk, source_path: skills/sandbox-sdk }
+      - { name: turnstile-spin, path: turnstile-spin, source_path: skills/turnstile-spin }
+      - { name: web-perf, path: web-perf, source_path: skills/web-perf }
+      - { name: workers-best-practices, path: workers-best-practices, source_path: skills/workers-best-practices }
+      - { name: wrangler, path: wrangler, source_path: skills/wrangler }
+
+  - id: zhaoxuya520/reverse-skill
+    url: https://github.com/zhaoxuya520/reverse-skill
+    ref: main
+    commit: ba445f84d6d16b54bfddfd4cbc1a63986f2159fc
+    license: MIT
+    import_mode: integrated-suite
+    entries:
+      - name: reverse-skill
+        path: reverse-skill
+        source_path: .
+        notes: Complete upstream snapshot is stored under reverse-skill/upstream.
+
+  - id: rorkai/app-store-connect-cli-skills
+    url: https://github.com/rorkai/app-store-connect-cli-skills
+    ref: e30039abddbe388179324d0f9cdccb66c3843115
+    commit: e30039abddbe388179324d0f9cdccb66c3843115
+    license: MIT
+    import_mode: individual-skills
+    related_tool:
+      id: rorkai/App-Store-Connect-CLI
+      url: https://github.com/rorkai/App-Store-Connect-CLI
+      ref: 3.4.1
+      commit: a5cbf6e70cf2c19997ec937165cf7dc4632e20e3
+    entries:
+      - { name: asc-app-create-ui, path: asc-app-create-ui, source_path: skills/asc-app-create-ui }
+      - { name: asc-apple-ads, path: asc-apple-ads, source_path: skills/asc-apple-ads }
+      - { name: asc-aso-audit, path: asc-aso-audit, source_path: skills/asc-aso-audit }
+      - { name: asc-build-lifecycle, path: asc-build-lifecycle, source_path: skills/asc-build-lifecycle }
+      - { name: asc-cli-usage, path: asc-cli-usage, source_path: skills/asc-cli-usage }
+      - { name: asc-crash-triage, path: asc-crash-triage, source_path: skills/asc-crash-triage }
+      - { name: asc-id-resolver, path: asc-id-resolver, source_path: skills/asc-id-resolver }
+      - { name: asc-localize-metadata, path: asc-localize-metadata, source_path: skills/asc-localize-metadata }
+      - { name: asc-metadata-sync, path: asc-metadata-sync, source_path: skills/asc-metadata-sync }
+      - { name: asc-notarization, path: asc-notarization, source_path: skills/asc-notarization }
+      - { name: asc-ppp-pricing, path: asc-ppp-pricing, source_path: skills/asc-ppp-pricing }
+      - { name: asc-release-flow, path: asc-release-flow, source_path: skills/asc-release-flow }
+      - { name: asc-revenuecat-catalog-sync, path: asc-revenuecat-catalog-sync, source_path: skills/asc-revenuecat-catalog-sync }
+      - { name: asc-screenshot-resize, path: asc-screenshot-resize, source_path: skills/asc-screenshot-resize }
+      - { name: asc-shots-pipeline, path: asc-shots-pipeline, source_path: skills/asc-shots-pipeline }
+      - { name: asc-signing-setup, path: asc-signing-setup, source_path: skills/asc-signing-setup }
+      - { name: asc-submission-health, path: asc-submission-health, source_path: skills/asc-submission-health }
+      - { name: asc-subscription-localization, path: asc-subscription-localization, source_path: skills/asc-subscription-localization }
+      - { name: asc-testflight-orchestration, path: asc-testflight-orchestration, source_path: skills/asc-testflight-orchestration }
+      - { name: asc-wall-submit, path: asc-wall-submit, source_path: skills/asc-wall-submit }
+      - { name: asc-whats-new-writer, path: asc-whats-new-writer, source_path: skills/asc-whats-new-writer }
+      - { name: asc-workflow, path: asc-workflow, source_path: skills/asc-workflow }
+      - { name: asc-xcode-build, path: asc-xcode-build, source_path: skills/asc-xcode-build }

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Maestro Runner"
+  short_description: "Run Android, iOS, and web UI tests locally"
+  default_prompt: "Use $maestro-runner to create and run mobile UI tests for this project."
